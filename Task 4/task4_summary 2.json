@@ -1,0 +1,57 @@
+{
+  "R1": {
+    "total_records": 12,
+    "passed_records": 11,
+    "failed_records": 1,
+    "pass_rate": 0.9166666666666666
+  },
+  "R2": {
+    "total_records": 10,
+    "passed_records": 10,
+    "failed_records": 0,
+    "pass_rate": 1.0
+  },
+  "R3": {
+    "total_records": 10,
+    "passed_records": 10,
+    "failed_records": 0,
+    "pass_rate": 1.0
+  },
+  "R4": {
+    "total_records": 12,
+    "passed_records": 10,
+    "failed_records": 2,
+    "pass_rate": 0.8333333333333334
+  },
+  "R5": {
+    "total_records": 12,
+    "passed_records": 8,
+    "failed_records": 4,
+    "pass_rate": 0.6666666666666666
+  },
+  "R6": {
+    "total_records": 4,
+    "passed_records": 3,
+    "failed_records": 1,
+    "pass_rate": 0.75
+  },
+  "overall": {
+    "total_evaluated_records": 60,
+    "passed_records": 52,
+    "failed_records": 8,
+    "pass_rate": 0.8666666666666667
+  },
+  "metadata": {
+    "model": "openai/gpt-oss-20b",
+    "trials_per_probabilistic_area": 10,
+    "minimum_required_trials": 10,
+    "quota_efficient": true,
+    "resumable": true,
+    "api_calls_per_probabilistic_area": 10,
+    "primary_prompt": "aria_primary_persona.md",
+    "fallback_prompt": "aria_fallback_persona.md",
+    "task3_file": "task_3.py",
+    "generated_at": "2026-09-03T18:46:23.791745+00:00",
+    "note": "R1-R5 use 10 independent trials by default, one LLM call per trial. Completed trials are checkpointed so a quota failure does not repeat previous API calls. R6 is deterministic and uses no LLM calls. Raw per-trial results are stored separately from the aggregate summary."
+  }
+}
